@@ -14,7 +14,9 @@ module.exports = class Blockchain {
     return this.blockchain[this.blockchain.length - 1];
   }
 
-  addNewBlock (newBlock) {
+  addNewBlock (index, timeStamp, data, precedingHash) {
+    const newBlock = new Block(index, timeStamp, data, precedingHash);
+    
     newBlock.precedingHash = this.getLatestBlock().hash;
     // newBlock.hash = newBlock.computeHash();
     newBlock.proofOfWork(this.difficulty);
