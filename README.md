@@ -1,3 +1,3 @@
 # KubaCoin cruyptocurrency
 
-This is a simple crypto currency made fro learning purposes.
+This is a simple crypto currency made for learning purposes.
